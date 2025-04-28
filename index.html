@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Miniso_2023.svg/1200px-Miniso_2023.svg.png"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Princess+Sofia&display=swap" rel="stylesheet">
-  <title>Catálogo AR</title>
-  <link rel="stylesheet" href="./Style/index.css">
-  <script>
-    function irModelo(modelo) {
-      window.location.href = 'modelo.html?modelo=' + modelo;
-    }
-  </script>
-  <script type="module" src="./Components/navbar.js"></script>
-</head>
-<body>
-  <search-bar></search-bar>
-  <h2>Productos más comprados</h1>
-  <div class="catalogo">
-
-    <div class="item" onclick="irModelo('Hamburcat.glb')">
-      <div class="etiqueta">Tendencia</div>
-      <img src="https://9.allegroimg.com/s1024/0cf64a/122e32664b139bdf704cdcddf129" alt="Producto 1">
-      <h2>Hamburkitty</h2>
-      <a href="modelo.html?modelo=Hamburcat.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Miniso_2023.svg/1200px-Miniso_2023.svg.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Princess+Sofia&display=swap" rel="stylesheet">
+    <title>Catálogo AR</title>
+    <link rel="stylesheet" href="./Style/index.css">
+    <script>
+      function irModelo(modelo) {
+        window.location.href = 'modelo.html?modelo=' + modelo;
+      }
+    </script>
+    <script type="module" src="./Components/navbar.js"></script>
+  </head>
   
-    <div class="item" onclick="irModelo('Taquitty.glb')">
-      <div class="etiqueta">Tendencia</div>
-      <img src="https://8.allegroimg.com/s1024/0c9da1/2669482d433ea7d82a9370ab8918" alt="Producto 2">
-      <h2>Taquitty</h2>
-      <a href="modelo.html?modelo=Taquitty.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
-    </div>
+  <body>
+    <search-bar></search-bar>
+    <h2>Productos más comprados</h1>
+    <div class="catalogo">
 
-    <div class="item" onclick="irModelo('Kitty.glb')">
-      <div class="etiqueta">Tendencia</div>
-      <img src="https://www.kittyshop.cl/wp-content/uploads/2022/05/159999.jpeg" alt="Producto 3">
-      <h2>Hello kitty</h2>
-      <a href="modelo.html?modelo=Kitty.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
-    </div>
+      <div class="item" onclick="irModelo('Hamburcat.glb')">
+        <div class="etiqueta">Tendencia</div>
+        <img src="https://9.allegroimg.com/s1024/0cf64a/122e32664b139bdf704cdcddf129" alt="Producto 1">
+        <h2>Hamburkitty</h2>
+        <a href="modelo.html?modelo=Hamburcat.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
+      </div>
+    
+      <div class="item" onclick="irModelo('Taquitty.glb')">
+        <div class="etiqueta">Tendencia</div>
+        <img src="https://8.allegroimg.com/s1024/0c9da1/2669482d433ea7d82a9370ab8918" alt="Producto 2">
+        <h2>Taquitty</h2>
+        <a href="modelo.html?modelo=Taquitty.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
+      </div>
 
-    <div class="item" onclick="irModelo('Oso.glb')">
-      <img src="https://http2.mlstatic.com/D_Q_NP_964905-MLA80367960866_112024-O.webp" alt="Producto 4">
-      <h2>Amoroso</h2>
-      <a href="modelo.html?modelo=Oso.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
-    </div>
+      <div class="item" onclick="irModelo('Kitty.glb')">
+        <div class="etiqueta">Tendencia</div>
+        <img src="https://www.kittyshop.cl/wp-content/uploads/2022/05/159999.jpeg" alt="Producto 3">
+        <h2>Hello kitty</h2>
+        <a href="modelo.html?modelo=Kitty.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
+      </div>
 
-    <div class="item" onclick="irModelo('Jirafita.glb')">
-      <img src="https://miroomi.com/wp-content/uploads/2024/01/BASS6GS.jpg" alt="Producto 5">
-      <h2>Jirafa</h2>
-      <a href="modelo.html?modelo=Jirafita.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
-    </div>
+      <div class="item" onclick="irModelo('Oso.glb')">
+        <img src="https://http2.mlstatic.com/D_Q_NP_964905-MLA80367960866_112024-O.webp" alt="Producto 4">
+        <h2>Amoroso</h2>
+        <a href="modelo.html?modelo=Oso.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
+      </div>
 
-    <div class="item" onclick="irModelo('Panda.glb')">
-      <div class="etiqueta">Tendencia</div>
-      <img src="https://image.made-in-china.com/202f0j00BAglLZryZRuI/Panda-with-Bamboo-Leaves-Plush-Toys-Mother-and-Child-Panda-Plush-Toy-Mothers-Day-Gift-Set.webp" alt="Producto 6">
-      <h2>Panda</h2>
-      <a href="modelo.html?modelo=Panda.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
-    </div>
+      <div class="item" onclick="irModelo('Jirafita.glb')">
+        <img src="https://miroomi.com/wp-content/uploads/2024/01/BASS6GS.jpg" alt="Producto 5">
+        <h2>Jirafa</h2>
+        <a href="modelo.html?modelo=Jirafita.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
+      </div>
 
-    <div class="item" onclick="irModelo('whiteBear.glb')">
-      <img src="https://i.pinimg.com/originals/06/6a/17/066a17db3ed89a60ef325e8fc155af2c.jpg" alt="Producto 7">
-      <h2>Osito blanco</h2>
-      <a href="modelo.html?modelo=whiteBear.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
-    </div>
+      <div class="item" onclick="irModelo('Panda.glb')">
+        <div class="etiqueta">Tendencia</div>
+        <img src="https://image.made-in-china.com/202f0j00BAglLZryZRuI/Panda-with-Bamboo-Leaves-Plush-Toys-Mother-and-Child-Panda-Plush-Toy-Mothers-Day-Gift-Set.webp" alt="Producto 6">
+        <h2>Panda</h2>
+        <a href="modelo.html?modelo=Panda.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
+      </div>
 
-    <div class="item" onclick="irModelo('whiteCat.glb')">
-      <div class="etiqueta">Tendencia</div>
-      <img src="https://m.media-amazon.com/images/I/41ntX1JFr6L.jpg" alt="Producto 8">
-      <h2>Gato blanco</h2>
-      <a href="modelo.html?modelo=whiteCat.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
-    </div>
+      <div class="item" onclick="irModelo('whiteBear.glb')">
+        <img src="https://i.pinimg.com/originals/06/6a/17/066a17db3ed89a60ef325e8fc155af2c.jpg" alt="Producto 7">
+        <h2>Osito blanco</h2>
+        <a href="modelo.html?modelo=whiteBear.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
+      </div>
 
-  </div>  
-</body>
+      <div class="item" onclick="irModelo('whiteCat.glb')">
+        <div class="etiqueta">Tendencia</div>
+        <img src="https://m.media-amazon.com/images/I/41ntX1JFr6L.jpg" alt="Producto 8">
+        <h2>Gato blanco</h2>
+        <a href="modelo.html?modelo=whiteCat.glb" class="boton" onclick="event.stopPropagation()">Ver en 3D</a>
+      </div>
+
+    </div>  
+  </body>
 </html>

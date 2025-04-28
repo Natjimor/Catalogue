@@ -1,8 +1,8 @@
-.visualizador-container {
-    width: 80%;
-    margin: 0;
+  *{
+    padding: 0%;
+    margin: 0%;
+    
   }
-  
   body {
     font-family: "Manrope", sans-serif;
     text-align: center;
@@ -13,9 +13,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
   }
   
-  h1 {
+  .visualizador-container {
+    width: 80%;
+    margin: 0;
+  }
+
+  h2 {
     color: #333;
     margin-bottom: 50px;
   }
@@ -104,7 +110,14 @@
   
   @media (max-width: 768px) {
     body {
-      padding: 30px;
+      width: 100vw;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
     }
   
     .catalogo {
@@ -113,7 +126,7 @@
     }
   
     .item {
-      width: 50vw;
+      width: 30vw;
       height: 50vw;
     }
   
@@ -124,5 +137,16 @@
     .boton, .boton_volver {
       width: 90%;
       padding: 8px 15px;
+    }
+
+    .etiqueta {
+      top: 5px;
+      left: 5px;
+      padding: 5px 10px;
+      font-size: 15px;
+    }
+    .visualizador-container {
+      width: 90%;
+      margin: 0;
     }
   }

@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Modelo 3D</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <link rel="stylesheet" href="./Style/index.css">
-  <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Miniso_2023.svg/1200px-Miniso_2023.svg.png"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Princess+Sofia&display=swap" rel="stylesheet">
-  <script type="module" src="./Components/navbar.js"></script>
-</head>
-<body>
-  <search-bar></search-bar>
-  <h2>Visualizador del producto</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 3D</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="./Style/index.css">
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Miniso_2023.svg/1200px-Miniso_2023.svg.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Princess+Sofia&display=swap" rel="stylesheet">
+    <script type="module" src="./Components/navbar.js"></script>
+  </head>
+  <body>
+    <search-bar></search-bar>
+    <h2>Visualizador del producto</h1>
 
-  <!-- Contenedor para el model-viewer -->
-  <div class="visualizador-container">
-    <model-viewer id="visor" src="" ar ar-modes="scene-viewer quick-look webxr" camera-controls auto-rotate alt="Modelo 3D" style="width: 100%; height: 500px;"></model-viewer>
-  </div>
+    <!-- Contenedor para el model-viewer -->
+    <div class="visualizador-container">
+      <model-viewer id="visor" src="" ar ar-modes="scene-viewer quick-look webxr" camera-controls auto-rotate alt="Modelo 3D" style="width: 100%; height: 500px;"></model-viewer>
+    </div>
 
-  <div style="margin-top: 20px;">
-    <a href="index.html" class="boton_volver">Volver al catálogo</a>
-  </div>
+    <div style="margin-top: 20px;">
+      <a href="index.html" class="boton_volver">Volver al catálogo</a>
+    </div>
 
-  <script>
-    // Leer parámetro de URL
-    const params = new URLSearchParams(window.location.search);
-    const modelo = params.get('modelo');
+    <script>
+      // Leer parámetro de URL
+      const params = new URLSearchParams(window.location.search);
+      const modelo = params.get('modelo');
 
-    // Si existe el modelo, se carga
-    if(modelo) {
-      document.getElementById('visor').setAttribute('src', 'Models/' + modelo);
-    } else {
-      document.body.innerHTML = "<h2>Modelo no encontrado</h2><br><a href='index.html'>Volver al catálogo</a>";
-    }
-  </script>
+      // Si existe el modelo, se carga
+      if(modelo) {
+        document.getElementById('visor').setAttribute('src', 'Models/' + modelo);
+      } else {
+        document.body.innerHTML = "<h2>Modelo no encontrado</h2><br><a href='index.html'>Volver al catálogo</a>";
+      }
+    </script>
 
-</body>
+  </body>
 </html>
