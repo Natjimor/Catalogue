@@ -16,8 +16,8 @@ class SearchBar extends HTMLElement {
             display: flex;
             align-items: center;
             gap: 30px;
-            padding: 20px;
-            width: 100vw;
+            padding: 30px;
+            width: 90vw;
             margin: 0 auto;
             flex-wrap: wrap;
             box-sizing: border-box;
