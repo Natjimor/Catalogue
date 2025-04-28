@@ -99,3 +99,30 @@
     transition: background-color 0.3s;
     width: 80%;
   }
+
+  /* --- Aquí empieza la parte responsive --- */
+  
+  @media (max-width: 768px) {
+    body {
+      padding: 30px;
+    }
+  
+    .catalogo {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    .item {
+      width: 50vw;
+      height: 50vw;
+    }
+  
+    .item h2 {
+      font-size: 16px;
+    }
+  
+    .boton, .boton_volver {
+      width: 90%;
+      padding: 8px 15px;
+    }
+  }
